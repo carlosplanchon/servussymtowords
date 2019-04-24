@@ -8,7 +8,7 @@ readme = Path("README.md").read_text()
 setup(
     name="servussymtowords",
     packages=["servussymtowords"],
-    version="0.1",
+    version="0.2",
     license="GPL3",
     description="Python3 module to convert temperature units and Km to words.",
     long_description=readme,
@@ -17,8 +17,11 @@ setup(
     author_email="bubbledoloresuruguay2@gmail.com",
     url="https://github.com/carlosplanchon/servussymtowords",
     download_url="https://github.com/carlosplanchon/"
-        "servussymtowords/archive/v0.1.tar.gz",
+        "servussymtowords/archive/v0.2.tar.gz",
     keywords=["convert", "units", "words"],
+    install_requires=[
+        "servusnumre"
+    ],
     classifiers=[
         "Intended Audience :: Developers",
         "Topic :: Software Development :: Build Tools",
